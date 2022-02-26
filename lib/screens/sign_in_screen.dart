@@ -1,3 +1,11 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'dart:io';
+import r'package:flutterfire_samples\lib\widgets\google_sign_in_button.dart';
+import r'package:flutterfire_samples\lib\utils\authentication.dart';
+
 class SignInScreen extends StatefulWidget {
   @override
   _SignInScreenState createState() => _SignInScreenState();
