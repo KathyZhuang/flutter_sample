@@ -1,11 +1,6 @@
-import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'dart:io';
-import r'package:flutterfire_samples\lib\widgets\google_sign_in_button.dart';
-import r'package:flutterfire_samples\lib\utils\authentication.dart';
-
+import 'package:flutterfire_samples/widgets/google_sign_in_button.dart';
+import 'package:flutterfire_samples/utils/authentication.dart';
 class SignInScreen extends StatefulWidget {
   @override
   _SignInScreenState createState() => _SignInScreenState();
@@ -15,7 +10,7 @@ class _SignInScreenState extends State<SignInScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: CustomColors.firebaseNavy,
+      backgroundColor: Colors.red,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.only(
@@ -43,14 +38,14 @@ class _SignInScreenState extends State<SignInScreen> {
                     Text(
                       'FlutterFire',
                       style: TextStyle(
-                        color: CustomColors.firebaseYellow,
+                        color: Colors.yellow,
                         fontSize: 40,
                       ),
                     ),
                     Text(
                       'Authentication',
                       style: TextStyle(
-                        color: CustomColors.firebaseOrange,
+                        color: Colors.orange,
                         fontSize: 40,
                       ),
                     ),
@@ -67,7 +62,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   }
                   return CircularProgressIndicator(
                     valueColor: AlwaysStoppedAnimation<Color>(
-                      CustomColors.firebaseOrange,
+                      Colors.orange,
                     ),
                   );
                 },
